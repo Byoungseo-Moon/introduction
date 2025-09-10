@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>자기소개서</title>
     <style>
+        
+        body{
+            background: url("./그림.jpg") no-repeat fixed;
+            background-size: cover;
+        } 
+
         #time{
             margin-left: 10px;
             margin-right: 60px;           
@@ -14,23 +20,31 @@
             font-weight: bold;                        
             color:white;    
             background-color:blue;
-            border-radius: 10px;        
+            border-radius: 10px;   
+               
                         
         }
-        .left {
-            width: 235px;
+        #left {
+            width: 300px;
             height: 830px;
             background-color: azure;
             font-size: 20px;            
             float: left;
+            box-sizing: border-box;
+            margin: 30px auto;
+            border-radius: 15px;
         }
 
-        .right {
-            width: 580px;
+        #right {
+            width: 550px;
             height: 830px;
             background-color: bisque;
             font-size: 20px;
             float: left;
+            box-sizing: border-box;
+            margin: 30px auto;
+            border-radius: 15px;
+            
 
         }
 
@@ -52,49 +66,61 @@
                
         }
 
-        .box {
-            width: 50px;
-            height: 50px;
-            background-color: blue;
-            border-color: beige;
-            clear: both;
-            display: inline-block;
-           
+        .left img {
+            margin-top: 30px;
+            margin-left: 15px;
         }
 
-        img {
-            margin-top: 20px;
+        a {
+           text-decoration: none;
         }
+
+        .right img{
+            display:inline-block;
+            margin-right: 0px;
+        }
+        
+               
     </style>
 </head>
 
 <body>
 
-    <div class="left" style="padding-left: 40px;">
+   
+    <div id="left" style="padding-left: 40px;">
 
-        <img src="./고양이.png" width="180px" height="180px" style="border-radius: 50%;">
+        <img src="./고양이.png" class="left img" width="180px" height="180px" style="border-radius: 50%;">
 
         <div id="time"></div>
         <p class="head">Ko Younghee</p>
 
-        <p>프로그래밍 재밌다</p>
-
+        
+        <a href="https://gemini.google.com/app?utm_source=app_launcher&utm_medium=owned&utm_campaign=base_all"
+                 style="color:blue; font-size: 20px;font-weight: bold;" >GEMINI 불러오기</a>            
+        
         <p>Incheon, Korea</p>
 
         <p>test@naver.com</p>
 
         <p class="head">NO SNS</p>
 
-        <a href="https://www.naver.com" style="color:blue; font-size: 25px;font-weight: bold;">클릭!</a>
+        <a href="https://youtu.be/93FxtBD0E30?si=qpZ5O8SMcKGooVOr" style="color:rgb(255, 119, 0); font-size: 25px;font-weight: bold;">노래듣기!</a>
+
+        <br>
+        <br>
+
+         <p id="selfintroduce1" style="color: green; padding-right: 30px; font-style: italic;"> </p>
+         
+        
 
     </div>
-    <div class="right" style="padding-left: 40px;">
+    <div id="right" style="padding-left: 40px;">
 
         <br>
         <div class="head">자기소개</div>
 
         <p>저는 <span style="background-color: yellow; color:red;font-weight: bold;">프로그래밍에</span> 관심이 많습니다.
-            <br>현재 열심히 공부하면 코딩 중!
+            <br>늦었지만, 현재 열심히 코딩 공부 중입니다.!
         </p>
 
         <did class="head">Experience</did>
@@ -102,30 +128,31 @@
         <ul>
             <li>프론트엔드</li>
             <ul>
-                <li style="list-style-type: circle; ">HTML/CSS/JAVASCRIPT</li>
-                <li style="list-style-type: circle;">웹페이지 잘 만든다</li>
-                <li style="list-style-type: circle;">다 잘함</li>
+                <li style="list-style-type: circle; ">HTML/CSS/JAVASCRIPT 잘하고 싶다</li>
+                <li style="list-style-type: circle;">웹페이지 만드는 이것 세로운 세상인걸!!</li>
+                <li style="list-style-type: circle;">여전히 미적 감각은 없어 ㅠㅠ</li>
             </ul>
 
             <li>백엔드</li>
             <ul>
-                <li style="list-style-type: circle;">자바잘함</li>
-                <li style="list-style-type: circle;">오라클 더 잘함</li>
+                <li style="list-style-type: circle;">자바가 좀 끌리는 걸~~</li>
+                <li style="list-style-type: circle;">오라클은 시간이 더 필요해</li>
             </ul>
         </ul>
-        <!-- <br> -->
-
+        
+        <!-- <img src="./고양이.png" class="right img" width="180px" height="180px" style="border-radius: 50%;"> -->
         <did class="head">보유 기술</did>
-
+        
         <ul>
-            <li>자바</li>
-            <li>오라클</li>
+            <li>자바 바리기</li>
+            <li>오라클 드림 췌이서 </li>
         </ul>
         <!-- <br> -->
+        
         <did class="head">Education</did>
         <br><br>
 
-        <did style="display:block;font-size:18px;font-weight: bold; text-align: left;color:red;padding-left: 170px;">
+        <did style="display:block;font-size:20px;font-weight: bold; text-align: left;color:red;padding-left: 170px;">
             학력사항
         </did>
 
@@ -140,22 +167,22 @@
 
             <tr>
                 <td style="text-align: left;font-size: 15px;">좋은대학교</td>
-                <td style="text-align: left;font-size: 15px;">좋은학과</td>
-                <td style="text-align: left;font-size: 15px;">2010.3 ~2013.2</td>
+                <td style="text-align: left;font-size: 15px;">짱짱학과</td>
+                <td style="text-align: left;font-size: 15px;">1987.3 ~ 1991.2</td>
                 <td style="text-align: left;font-size: 15px;">졸업</td>
             </tr>
 
             <tr>
-                <td style="text-align: left;font-size: 15px;">꽤좋은고등학교</td>
-                <td style="text-align: left;font-size: 15px;">-</td>
-                <td style="text-align: left;font-size: 15px;">2007.3 ~2009.2</td>
+                <td style="text-align: left;font-size: 15px;">열심히고등학교</td>
+                <td style="text-align: left;font-size: 15px;">자연계열</td>
+                <td style="text-align: left;font-size: 15px;">1984.3 ~ 1987.2</td>
                 <td style="text-align: left;font-size: 15px;">졸업</td>
             </tr>
 
         </table>
 
     </div>
-
+   
 
 </body>
 
@@ -167,4 +194,19 @@
         let time = datetime.getHours() + ":" + datetime.getMinutes() + ":" + datetime.getSeconds();
         obj.innerHTML = time;
     }, 1000);
+    
+
+    let title1 = "나의 좌우명(座右銘, Motto)은 성실(誠實, Integrity)과 인내(忍耐, Perseverance) 입니다.     ";
+    let text1 = document.querySelector("#selfintroduce1");
+    let i = 0;
+    let id1 = setInterval(() => {
+        let word1 = title1.charAt(i++);
+        text1.innerHTML += word1;
+        if (i > title1.length) {
+            text1.innerHTML = "";
+            i = 0;
+        }
+    }, 150);
+    
+
 </script>
